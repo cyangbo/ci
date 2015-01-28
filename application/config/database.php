@@ -81,7 +81,8 @@ $db['test']['swap_pre'] = '';
 $db['test']['autoinit'] = TRUE;
 $db['test']['stricton'] = FALSE;
 $db['default']['port'] = 3306;
-
+//echo dirname( __FILE__ );
+//echo base_url();
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */

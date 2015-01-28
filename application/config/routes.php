@@ -53,8 +53,10 @@ $route['product/(:any)'] = "catalog/product_lookup/$1/$2/$3/$4/$5";        //将
 $route['product/(:num)'] = "catalog/product_lookup_by_id/$1";
 当“product”作为 URL 中第一个分段时，如果第二分段是数字，则将被重定向到“catalog”类，并传递所匹配的内容到“product_lookup_by_id”方法中。
  */
-$route['default_controller'] = "welcome";
+$route['default_controller'] = "blog";
 $route['404_override'] = '';
+$route['register'] = 'login/register';
+$route['logout'] = 'login/logout';
 //$route['news/(:any)'] = 'news/view/$1';
 
 /*

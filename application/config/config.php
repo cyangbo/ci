@@ -57,7 +57,7 @@ $config['uri_protocol']	= 'AUTO';
 | http://codeigniter.com/user_guide/general/urls.html
 */
 
-$config['url_suffix'] = '.html';
+$config['url_suffix'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -228,9 +228,13 @@ $config['cache_path'] = '';
 |
 | If you use the Encryption class or the Session class you
 | MUST set an encryption key.  See the user guide for info.
+用 $this->load->library 函数加载：$this->load->library('encrypt');
+加密类库就可以这样使用：$this->encrypt
 |
 */
-$config['encryption_key'] = '';
+//加密类或者Session的密匙
+
+$config['encryption_key'] = '01234567890123456789012345678901';
 
 /*
 |--------------------------------------------------------------------------
